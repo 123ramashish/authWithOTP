@@ -10,9 +10,6 @@ Security: Follows best practices like password hashing and JWT for authenticatio
 Mobile-Friendly Design: The app is responsive and replicates the provided design, ensuring a smooth experience on all devices.
 Folder Structure
 The following is the project folder structure:
-
-bash
-Copy code
 server/                    # Backend (Node.js/Express.js) main folder
 ├── client/                 # Frontend (React.js)
 │   ├── dist/               # Distribution folder for frontend build files
@@ -53,7 +50,6 @@ server/                    # Backend (Node.js/Express.js) main folder
 ├── .gitignore              # Files/folders to be ignored by Git
 └── README.md               # Main project documentation
 
-
 Technologies Used
 Frontend: React, Tailwind CSS for styling
 Backend: Node.js, Express.js (for APIs)
@@ -69,8 +65,7 @@ API base URL: You need a backend server to handle the signup, login, and OTP ver
 Backend Setup
 Clone the backend repository (assuming it is a separate service).
 Install dependencies and configure environment variables.
-bash
-Copy code
+
 # Clone the backend repo
 git clone <backend-repo-url>
 
@@ -88,8 +83,7 @@ npm start
 Frontend Setup
 Clone this repository.
 Install the required dependencies:
-bash
-Copy code
+
 # Clone the repo
 git clone <frontend-repo-url>
 
@@ -99,32 +93,22 @@ cd <frontend-project-directory>
 # Install dependencies
 npm install
 Create a .env file in the root of your project and add the following environment variables:
-bash
-Copy code
 REACT_APP_API_URL=http://localhost:8000/api   # API base URL
 Start the React application:
-bash
-Copy code
 npm start
-The app should now be running at http://localhost:3000.
+The app should now be running at http://localhost:8000.
 
 How to Build for Production
 To build the project for production, run the following command:
-
-bash
-Copy code
 npm run build
 This will generate a build/ folder with optimized production assets.
 
 Running Tests
 If tests are implemented, you can run them using:
-
-bash
-Copy code
 npm test
 API Endpoints
 Make sure you have the backend server running, which provides the following API endpoints:
 
-POST api/auth/signup: Sign up a user and send OTP to their email.
-POST api/auth/verify-otp: Verify the OTP sent to the user’s email.
-POST ap/auth/login: Log in with email and password.
+POST /api/auth/signup: Sign up a user and send OTP to their email.
+POST /api/auth/verify-otp: Verify the OTP sent to the user’s email.
+POST /api/auth/login: Log in with email and password.
